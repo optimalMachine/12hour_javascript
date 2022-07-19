@@ -1,2 +1,12 @@
-var mathPlay = Math.floor(5.434);
-console.log(mathPlay)
+//Tiny Weather App
+let weather = prompt('how is the weather today?')
+
+if (weather == 'rain'){
+  console.log(`it's rainy day today.`)
+}else {
+  console.log('Wear your sunglasses.')
+}
+
+
+
+
