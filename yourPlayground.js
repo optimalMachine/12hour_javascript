@@ -27,5 +27,52 @@ function tipCalculator (){
 //ES6 =>
 const sumArrow = (a,b) => a+b
 
+let groceries = ['banana','apple','orange','pear']
+groceries.push('cookie')
+// console.log(groceries)
+// console.log(groceries.slice(0,2))
+// console.log(groceries.indexOf('orange'))
+// console.log(groceries.length)
+
+
+//Object
+const person={
+  name:'Leonardo',
+  shirt:'white'
+}
+
+console.log(person.name)
+console.log(person.shirt)
+console.log(person['name'])
+console.log(person['shirt'])
+
+person.phone = '1-222-3333'
+console.log(person.phone)
+console.log(person)
+
+
+const person_02 = {
+  name:'Qazi',
+  shirt:'black'
+}
+
+const introducer = (name, shirt) => {
+  const person = {
+    name: name,
+    shirt: shirt,
+    asset: 100000,
+    liabilities: 50000,
+    netWorth: function() {
+      return this.asset - this.liabilities
+    }
+  }
+  return `Hi, my name is ${person.name} and the color of my shirt is ${person.shirt} and, I have total ${person.netWorth()}`
+}
+
+// console.log(introducer('jiuk','white'))
+
+
+//loop
+
 
 
