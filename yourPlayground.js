@@ -41,14 +41,14 @@ const person={
   shirt:'white'
 }
 
-console.log(person.name)
-console.log(person.shirt)
-console.log(person['name'])
-console.log(person['shirt'])
+// console.log(person.name)
+// console.log(person.shirt)
+// console.log(person['name'])
+// console.log(person['shirt'])
 
-person.phone = '1-222-3333'
-console.log(person.phone)
-console.log(person)
+// person.phone = '1-222-3333'
+// console.log(person.phone)
+// console.log(person)
 
 
 const person_02 = {
@@ -73,6 +73,38 @@ const introducer = (name, shirt) => {
 
 
 //loop
+let fruits = ['banana','apple','orange','pear','banana','apple','orange','pear','banana','apple','orange','pear','banana','apple','orange','pear']
 
+// for (let i=0; i<fruits.length; i++){
+//       console.log(fruits[i])
+// }
+
+// console.log('loop start')
+// for (fruits of fruits){
+//   console.log(fruits)
+// }
+
+// let sum=0
+// for (let i=0;i<numbers.length;i++){
+//   sum += numbers[i]
+// }
+// console.log(sum)
+
+// let sum2=0
+// for (number of numbers){
+//   sum2 += number
+// }
+// console.log(sum2)
+
+// const numbers=[1,2,3,4,5,6]
+
+// const doubleNumber = (a) => {
+//   let result = []
+//   for (number of numbers){
+//     result.push(number*2)
+//   }
+//   return result
+// }
+// console.log(doubleNumber(numbers))
 
 
