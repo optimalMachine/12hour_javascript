@@ -189,4 +189,5 @@ const wordFrequency = (phrase) =>{
   return result
 }
 
-//console.log(wordFrequency('lol. what, lol'))
+const userInput = prompt('what do you say?')
+console.log(wordFrequency(userInput))
