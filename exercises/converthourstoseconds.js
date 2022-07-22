@@ -9,7 +9,11 @@
 function howManySeconds(hours) {
   // Your function should return an integer
   // of how many seconds are in the hour
+  return hours * 60 * 60
+  
 }
+
+console.log(howManySeconds(1))
 
 //Topics: Variables,functions, Math
 
