@@ -2,3 +2,29 @@ html, body {
   font-family: 'Inter', sans-serif;
   font-family: 'Lato', sans-serif;
 }
+
+#red {
+  width:100px;
+  height:100px;
+  background-color:red;
+  margin:10px;
+}
+
+#yellow {
+  width:100px;
+  height:100px;
+  background-color:yellow;
+  margin:10px;
+}
+
+#green {
+  width:100px;
+  height:100px;
+  background-color:green;
+  margin:10px;
+}
+
+.colorSquare:hover{
+  border:5px solid black;
+  cursor:pointer;
+}

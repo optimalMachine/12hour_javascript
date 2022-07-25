@@ -13,7 +13,7 @@ function howManySeconds(hours) {
   
 }
 
-console.log(howManySeconds(1))
+//console.log(howManySeconds(1))
 
 //Topics: Variables,functions, Math
 

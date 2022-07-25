@@ -162,7 +162,7 @@ const letterFrequency = (phrase) => {
   for (const letter of phrase) {
     if (letter in result) {
       result[letter] = result[letter]++;
-    }else{
+    } else {
       result[letter] = 1;
     }
   }
@@ -171,17 +171,17 @@ const letterFrequency = (phrase) => {
 
 //console.log(letterFrequency('씨발놈아'))
 
-const wordFrequency = (phrase) =>{
+const wordFrequency = (phrase) => {
   let result = {}
-  let replaceTexts = phrase.replaceAll('.' , '')
-  let replaceTexts2 = replaceTexts.replaceAll(',' ,'')
+  let replaceTexts = phrase.replaceAll('.', '')
+  let replaceTexts2 = replaceTexts.replaceAll(',', '')
   let texts = replaceTexts2.split(" ")
   console.log(texts)
-  for (const word of texts){
+  for (const word of texts) {
     console.log(word)
-    if (word in result){
+    if (word in result) {
       result[word] += 1
-    }else{
+    } else {
       result[word] = 1
     }
   }
@@ -189,5 +189,86 @@ const wordFrequency = (phrase) =>{
   return result
 }
 
-const userInput = prompt('what do you say?')
-console.log(wordFrequency(userInput))
+//const userInput = prompt('what do you say?')
+//console.log(wordFrequency(userInput))
+
+// let result = [1, 2, 3, 4].map(number => number * 2);
+// console.log(result);
+
+const filter = (numbers, greaterThan) => {
+  let result = []
+  for (number of numbers) {
+    if (number > greaterThan) {
+      result.push(number)
+    }
+  }
+
+  return result
+}
+
+//console.log(filter([1, 2, 3, 4, 5, 6], 3))
+//console.log([1, 2, 3, 4, 5, 6].filter(num => num > 5))
+
+const actors = [
+  { name: 'johnny', netWorth: 2000000 },
+  { name: 'amber', netWorth: 10 },
+  { name: 'matt', netWorth: 170000000 },
+  { name: 'brad', netWorth: 300000000 },
+  { name: 'leonardo', netWorth: 100000000 }
+]
+
+
+// let result = actors.filter(actor => actor.netWorth > 10)
+// console.log(result)
+// let names = result.map(actor => actor.name).join(', ')
+// console.log(names)
+// console.log(result.map(actor => actor.name))
+
+// playground.innerHTML = `<h1>${names}</h1>`
+
+//sum all of the net worths
+let nums = [1, 2, 3]
+// const result = nums.reduce((prev, curr) => prev + curr)
+// const result2 = nums.reduce((prev, curr) => prev * curr)
+// console.log(result)
+// console.log(result2)
+// console.log(actors.reduce((prev, curr) => prev + curr.netWorth, 0))
+
+//DOM 
+
+// let titleDiv = document.getElementById('title');
+// console.log('before: ' + title.innerText)
+// title.innerText = 'Goodbye'
+// console.log('after ' + title.innerText);
+// let message = 'Goodbye my lover!'
+// titleDiv.innerHTML = `<h1>${message}</h1>`;
+// titleDiv.style.color = 'red';
+// titleDiv.style.backgroundColor = 'blue'
+// let redBox = document.getElementById('red');
+// let yellowBox = document.getElementById('yellow');
+// let greenBox = document.getElementById('green');
+
+// const clickRed = () => {
+//   console.log('red clicked')
+// }
+// const clickYellow = () => console.log('yellow clicked')
+// const clickGreen = () => console.log('green clicked')
+
+// redBox.onclick = () => console.log('red clicked');
+// yellowBox.onclick = () => console.log('yellow clicked');
+// greenBox.onclick = () => console.log('green clicked');
+
+let squares = document.querySelectorAll('.colorSquare')
+//console.log(squares)
+//console.log(squares[0].value)
+
+// squares.forEach(square => console.log(square.value))
+// squares.forEach(square => {
+//   square.onclick = () => console.log(square.value)
+// })
+
+let timeClicked = { 'red': 0, 'yellow': 0, 'green': 0 }
+squares.forEach(square => square.onclick = () => {
+  timeClicked[square.value] = timeClicked[square.value] + 1;
+  square.innerText = timeClicked[square.value]
+})
